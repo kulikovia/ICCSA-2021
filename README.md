@@ -5,3 +5,5 @@
 
 3. Model.zip - KG model in RDF/XML format (zip archive)
 
+4. sparql_script.spql - RDF/XML model load script (SPARQL)
+
