@@ -1,3 +1,7 @@
 # ICCSA-2021
-tnmo.owl - Telecommunication network monitoring ontology (TNMO) fragment
-ICSSA2021_KG_generate_script.py - Python script for RDF/XML generating
+1. tnmo.owl - Telecommunication network monitoring ontology (TNMO) fragment
+
+2. ICSSA2021_KG_generate_script.py - Python script for RDF/XML generating
+
+3. Model.zip - KG model in RDF/XML format (zip archive)
+
