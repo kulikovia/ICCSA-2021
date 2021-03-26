@@ -1,0 +1,8 @@
+
+LOAD <file:///C:/Blazegraph/1/KG_telecom_device_1_.nq>;
+
+LOAD <file:///C:/Blazegraph/1/KG_telecom_actions_1_.nq>;
+
+LOAD <file:///C:/Blazegraph/1/KG_telecom_events_1_.nq>;
+
+LOAD <file:///C:/Blazegraph/1/KG_telecom_monitoring_1_.nq>;
