@@ -7,3 +7,4 @@
 
 4. sparql_script.spql - RDF/XML model load script (SPARQL)
 
+5. SPARQL_Requests-Responce.txt - SPARQL requests and responces
