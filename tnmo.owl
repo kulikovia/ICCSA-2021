@@ -1,0 +1,415 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="urn:webprotege:ontology:1da81986-54df-4e2d-8033-220159b9f956#"
+     xml:base="urn:webprotege:ontology:1da81986-54df-4e2d-8033-220159b9f956"
+     xmlns:UO="http://purl.obolibrary.org/obo/uo.owl"
+     xmlns:om="http://purl.oclc.org/net/unis/ontology/sensordata.owl/"
+     xmlns:geo="http://www.w3.org/2003/01/geo/"
+     xmlns:net="http://purl.org/toco/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/spec/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:tnmo="http://127.0.0.1/tnmo/"
+     xmlns:webprotege="http://webprotege.stanford.edu/">
+    <owl:Ontology rdf:about="urn:webprotege:ontology:1da81986-54df-4e2d-8033-220159b9f956"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9Ku087jeQ7HfVgrp3Tfnqn -->
+
+    <owl:AnnotationProperty rdf:about="http://webprotege.stanford.edu/R9Ku087jeQ7HfVgrp3Tfnqn">
+        <rdfs:label>requests</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RK4v0PGjD6QtAbt2HxUSX9 -->
+
+    <owl:AnnotationProperty rdf:about="http://webprotege.stanford.edu/RK4v0PGjD6QtAbt2HxUSX9">
+        <rdfs:label>tnmo:requests</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/R9Ku087jeQ7HfVgrp3Tfnqn"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://127.0.0.1/tnmo/device_parameter -->
+
+    <owl:ObjectProperty rdf:about="http://127.0.0.1/tnmo/device_parameter">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/toco/Device"/>
+        <rdfs:domain rdf:resource="http://purl.org/toco/Service"/>
+        <rdfs:range rdf:resource="http://127.0.0.1/tnmo/Parameter_M"/>
+        <rdfs:label>tnmo:device_parameter</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://127.0.0.1/tnmo/event_details -->
+
+    <owl:ObjectProperty rdf:about="http://127.0.0.1/tnmo/event_details">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/tnmo/Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>tnmo:event_details</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://127.0.0.1/tnmo/event_geodata -->
+
+    <owl:ObjectProperty rdf:about="http://127.0.0.1/tnmo/event_geodata">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/tnmo/Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+        <rdfs:label>tnmo:event_geodata</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://127.0.0.1/tnmo/has_event_type -->
+
+    <owl:ObjectProperty rdf:about="http://127.0.0.1/tnmo/has_event_type">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/tnmo/Event"/>
+        <rdfs:range rdf:resource="http://127.0.0.1/tnmo/event_type"/>
+        <rdfs:label>tnmo:has_event_type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://127.0.0.1/tnmo/has_parameter_type -->
+
+    <owl:ObjectProperty rdf:about="http://127.0.0.1/tnmo/has_parameter_type">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/tnmo/Parameter_M"/>
+        <rdfs:range rdf:resource="http://127.0.0.1/tnmo/parameter_type"/>
+        <rdfs:label>tnmo:has_parameter_type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://127.0.0.1/tnmo/has_req_type -->
+
+    <owl:ObjectProperty rdf:about="http://127.0.0.1/tnmo/has_req_type">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/R8lrEChCYk4mrzmeF7ARoC7"/>
+        <rdfs:range rdf:resource="http://127.0.0.1/tnmo/request_type"/>
+        <rdfs:label>tnmo:has_req_type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://127.0.0.1/tnmo/parameter_detailes -->
+
+    <owl:ObjectProperty rdf:about="http://127.0.0.1/tnmo/parameter_detailes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/tnmo/Parameter_M"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>tnmo:parameter_detailes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://127.0.0.1/tnmo/parameter_geodata -->
+
+    <owl:ObjectProperty rdf:about="http://127.0.0.1/tnmo/parameter_geodata">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/tnmo/Parameter_M"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+        <rdfs:label>tnmo:parameter_geodata</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://127.0.0.1/tnmo/request_details -->
+
+    <owl:ObjectProperty rdf:about="http://127.0.0.1/tnmo/request_details">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/R8lrEChCYk4mrzmeF7ARoC7"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>tnmo:request_details</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://127.0.0.1/tnmo/request_geodata -->
+
+    <owl:ObjectProperty rdf:about="http://127.0.0.1/tnmo/request_geodata">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/R8lrEChCYk4mrzmeF7ARoC7"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+        <rdfs:label>tnmo:request_geodata</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://127.0.0.1/tnmo/requests -->
+
+    <owl:ObjectProperty rdf:about="http://127.0.0.1/tnmo/requests">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/toco/Device"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/R8lrEChCYk4mrzmeF7ARoC7"/>
+        <rdfs:label>tnmo:requests</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://127.0.0.1/tnmo/tn_event -->
+
+    <owl:ObjectProperty rdf:about="http://127.0.0.1/tnmo/tn_event">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/toco/Device"/>
+        <rdfs:range rdf:resource="http://127.0.0.1/tnmo/Event"/>
+        <rdfs:label>tnmo:tn_event</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://127.0.0.1/tnmo/event_timestamp -->
+
+    <owl:DatatypeProperty rdf:about="http://127.0.0.1/tnmo/event_timestamp">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/tnmo/Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:label>tnmo:event_timestamp</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://127.0.0.1/tnmo/parameter_tinestamp -->
+
+    <owl:DatatypeProperty rdf:about="http://127.0.0.1/tnmo/parameter_tinestamp">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/tnmo/Parameter_M"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:label>tnmo:parameter_tinestamp</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://127.0.0.1/tnmo/request_timestamp -->
+
+    <owl:DatatypeProperty rdf:about="http://127.0.0.1/tnmo/request_timestamp">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/R8lrEChCYk4mrzmeF7ARoC7"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:label>tnmo:request_timestamp</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://127.0.0.1/tnmo/Event -->
+
+    <owl:Class rdf:about="http://127.0.0.1/tnmo/Event">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>tnmo:Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1/tnmo/Parameter_M -->
+
+    <owl:Class rdf:about="http://127.0.0.1/tnmo/Parameter_M">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label>tnmo:Parameter_M</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1/tnmo/RB7HfAgo7XcbFujsEvWpt01 -->
+
+    <owl:Class rdf:about="http://127.0.0.1/tnmo/RB7HfAgo7XcbFujsEvWpt01">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tnmo:Monitoring_details</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1/tnmo/event_type -->
+
+    <owl:Class rdf:about="http://127.0.0.1/tnmo/event_type">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1/tnmo/Event"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tnmo:event_types</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1/tnmo/parameter_type -->
+
+    <owl:Class rdf:about="http://127.0.0.1/tnmo/parameter_type">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1/tnmo/Parameter_M"/>
+        <rdfs:label>tnmo:parameter_type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1/tnmo/request_type -->
+
+    <owl:Class rdf:about="http://127.0.0.1/tnmo/request_type">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8lrEChCYk4mrzmeF7ARoC7"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tnmo:request_types</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/toco/Device -->
+
+    <owl:Class rdf:about="http://purl.org/toco/Device">
+        <rdfs:label>net:Device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/toco/Interface -->
+
+    <owl:Class rdf:about="http://purl.org/toco/Interface">
+        <rdfs:label>net:Interface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/toco/Service -->
+
+    <owl:Class rdf:about="http://purl.org/toco/Service">
+        <rdfs:label>net:Service</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/toco/User -->
+
+    <owl:Class rdf:about="http://purl.org/toco/User">
+        <rdfs:label>net:User</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8lrEChCYk4mrzmeF7ARoC7 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8lrEChCYk4mrzmeF7ARoC7">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tnmo:Request</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#Point -->
+
+    <owl:Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#Point">
+        <rdfs:label>geo:Point</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://127.0.0.1/tnmo/R7f29rUzj8a2uo8aqOwME0L -->
+
+    <owl:NamedIndividual rdf:about="http://127.0.0.1/tnmo/R7f29rUzj8a2uo8aqOwME0L">
+        <rdf:type rdf:resource="http://127.0.0.1/tnmo/RB7HfAgo7XcbFujsEvWpt01"/>
+        <rdfs:label>tnmo_parameter_monitoring</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://127.0.0.1/tnmo/device_error -->
+
+    <owl:NamedIndividual rdf:about="http://127.0.0.1/tnmo/device_error">
+        <rdf:type rdf:resource="http://127.0.0.1/tnmo/event_type"/>
+        <rdfs:label>tnmo:device_error</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://127.0.0.1/tnmo/device_event -->
+
+    <owl:NamedIndividual rdf:about="http://127.0.0.1/tnmo/device_event">
+        <rdf:type rdf:resource="http://127.0.0.1/tnmo/RB7HfAgo7XcbFujsEvWpt01"/>
+        <rdfs:label>tnmo:device_event</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://127.0.0.1/tnmo/device_state -->
+
+    <owl:NamedIndividual rdf:about="http://127.0.0.1/tnmo/device_state">
+        <rdf:type rdf:resource="http://127.0.0.1/tnmo/parameter_type"/>
+        <rdfs:label>tnmo:device_state</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://127.0.0.1/tnmo/is_requested_with -->
+
+    <owl:NamedIndividual rdf:about="http://127.0.0.1/tnmo/is_requested_with">
+        <rdf:type rdf:resource="http://127.0.0.1/tnmo/RB7HfAgo7XcbFujsEvWpt01"/>
+        <rdfs:label>tnmo:is_requested_with</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://127.0.0.1/tnmo/user_action -->
+
+    <owl:NamedIndividual rdf:about="http://127.0.0.1/tnmo/user_action">
+        <rdf:type rdf:resource="http://127.0.0.1/tnmo/request_type"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tnmo:user_action</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi -->
+
