@@ -1,0 +1,75 @@
+SPARQL REQUEST #1 (User actions):
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema>
+PREFIX net: <http://purl.org/toco/>
+PREFIX geo: <http://www.w3.org/2003/01/geo/>
+PREFIX tnmo: <http://127.0.0.1/tnmo/>
+SELECT *
+WHERE
+{
+  ?Request tnmo:Requests ?Device .
+  ?Device net:hasMAC ?MAC .
+  ?Request tnmo:has_req_type ?Req_type .
+  }
+LIMIT 5
+
+ANSWER:
+
+Request	Device	MAC	Req_type
+<http://127.0.0.1/tnmo/Request_1/>		<http://127.0.0.1/tnmo/Device_90/>	MAC_90	tnmo:user_action
+<http://127.0.0.1/tnmo/Request_10/>		<http://127.0.0.1/tnmo/Device_96/>	MAC_96	tnmo:user_action
+<http://127.0.0.1/tnmo/Request_100/>	<http://127.0.0.1/tnmo/Device_77/>	MAC_77	tnmo:user_action
+<http://127.0.0.1/tnmo/Request_11/>		<http://127.0.0.1/tnmo/Device_46/>	MAC_46	tnmo:user_action
+<http://127.0.0.1/tnmo/Request_12/>		<http://127.0.0.1/tnmo/Device_41/>	MAC_41	tnmo:user_action
+
+SPARQL REQUEST #2 (TN Event):
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema>
+PREFIX net: <http://purl.org/toco/>
+PREFIX geo: <http://www.w3.org/2003/01/geo/>
+PREFIX tnmo: <http://127.0.0.1/tnmo/>
+SELECT *
+WHERE
+{
+  ?Request tnmo:tn_event ?Device .
+  ?Device net:hasMAC ?MAC .
+  ?Request tnmo:has_event_type ?Req_type .
+  }
+LIMIT 5
+
+ANSWER:
+
+Request	Device	MAC	Req_type
+<http://127.0.0.1/tnmo/TN_Event_1/>		<http://127.0.0.1/tnmo/Device_100/>	MAC_100	tnmo:device_error
+<http://127.0.0.1/tnmo/TN_Event_10/>	<http://127.0.0.1/tnmo/Device_3/>	MAC_3	tnmo:device_error
+<http://127.0.0.1/tnmo/TN_Event_100/>	<http://127.0.0.1/tnmo/Device_82/>	MAC_82	tnmo:device_error
+<http://127.0.0.1/tnmo/TN_Event_11/>	<http://127.0.0.1/tnmo/Device_66/>	MAC_66	tnmo:device_error
+<http://127.0.0.1/tnmo/TN_Event_12/>	<http://127.0.0.1/tnmo/Device_29/>	MAC_29	tnmo:device_error
+
+SPARQL REQUEST #3 (Parameters monitoring):
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema>
+PREFIX net: <http://purl.org/toco/>
+PREFIX geo: <http://www.w3.org/2003/01/geo/>
+PREFIX tnmo: <http://127.0.0.1/tnmo/>
+SELECT *
+WHERE
+{
+  ?Request tnmo:device_parameter ?Device .
+  ?Device net:hasMAC ?MAC .
+  ?Request tnmo:has_parameter_type ?Req_type .
+  }
+LIMIT 5
+
+ANSWER:
+
+Request	Device	MAC	Req_type
+<http://127.0.0.1/tnmo/Parameter_M_1/>		<http://127.0.0.1/tnmo/Device_100/>	MAC_100	tnmo:device_state
+<http://127.0.0.1/tnmo/Parameter_M_10/>		<http://127.0.0.1/tnmo/Device_99/>	MAC_99	tnmo:device_state
+<http://127.0.0.1/tnmo/Parameter_M_100/>	<http://127.0.0.1/tnmo/Device_11/>	MAC_11	tnmo:device_state
+<http://127.0.0.1/tnmo/Parameter_M_11/>		<http://127.0.0.1/tnmo/Device_21/>	MAC_21	tnmo:device_state
+<http://127.0.0.1/tnmo/Parameter_M_12/>		<http://127.0.0.1/tnmo/Device_42/>	MAC_42	tnmo:device_state
+
